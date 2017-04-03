@@ -1,0 +1,60 @@
+.markets {
+  height: 300px;
+  background-color: @threme-color-darkgreen;
+  background-image: url(../img/markets-bg.png);
+  background-repeat: no-repeat;
+  @media @tablet {
+    background-position-x: 54%;
+  }
+  @media @desktop-min {
+    background-position-x: 60%;
+  }
+}
+
+.markets__title {
+  position: relative;
+  display: inline-block;
+  top: 70px;
+  left: 46.5%;
+  margin: 0;
+  font-family: @special-font-bold;
+  .set-font (123px, 130px);
+  letter-spacing: -2px;
+  color: @threme-color-white;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -130px;
+    top: 10px;
+    width: 100px;
+    height: 130px;
+    background-image: url(../img/logo-tag.png);
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: 'магазинов';
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    font-family: @emphasis-font-medium;
+    letter-spacing: 1px;
+    .set-font (23px, 26px);
+    color: @threme-color-green;
+    @media @desktop-min {
+      left: 5px;
+    }
+  }
+  @media @tablet {
+    left: 36.5%;
+    &::before {
+    	left: -120px;
+    }
+    &::after {
+      left: 10px;
+      bottom: -15px;
+    }
+  }
+  @media @desktop-min {
+    left: 43%;
+  }
+}

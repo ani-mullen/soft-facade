@@ -1,0 +1,162 @@
+.page-footer {
+  background-color: @threme-color-darkgrey;
+  padding: 60px;
+  display: flex;
+  @media @tablet {
+    flex-direction: column;
+    padding: 0px 0px 20px 20px;
+  }
+  @media @desktop-min {
+    padding: 65px 20px;
+  }
+}
+
+.page-footer__item-title {
+  margin: 0;
+  opacity: 0.4;
+  margin-bottom: 25px;
+  color: @threme-color-white;
+  .set-font (18px, 22px);
+  font-family: @emphasis-font-regular;
+  @media @tablet {
+    position: relative;
+    font-weight: normal;
+    .set-font (32px, 40px);
+    margin-bottom: 0px;
+    padding: 36px 0;
+    border-bottom: 1px solid @threme-color-grey;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 25px;
+      top: 45px;
+      width: 25px;
+      height: 25px;
+      background-image: url(../img/icon-arrow-down.svg);
+      background-repeat: no-repeat;
+      background-size: 25px;
+      transition-duration: 0.3s;
+    }
+    &--close::after {
+      transform: rotate(180deg);
+    }
+    &--open::after {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.page-footer__item-content {
+  &--close {
+    display: none;
+  }
+  &--open {
+    display: block;
+  }
+  @media @tablet {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid @threme-color-grey;
+  }
+}
+
+.page-footer__item {
+  width: 16.5%;
+  padding-right: 10px;
+  &--brand {
+    flex-grow: 2;
+  }
+  @media @tablet {
+    width: 100%;
+    &--partners {
+      order: 2;
+    }
+    &--career {
+      order: 3;
+    }
+    &--buyers {
+      order: 1;
+    }
+    &--feedback {
+      order: 4;
+    }
+    &--brand {
+      order: 5;
+    }
+  }
+  @media @desktop-min {
+    width: 17%;
+    padding-right: 2px;
+    &--partners {
+      order: 2;
+    }
+    &--career {
+      order: 3;
+    }
+    &--buyers {
+      order: 1;
+    }
+    &--feedback {
+      order: 4;
+    }
+    &--brand {
+      order: 5;
+    }
+  }
+}
+
+.page-footer__item-link {
+  text-decoration: none;
+  color: @threme-color-white;
+  .set-font (14px, 16px);
+  display: block;
+  padding-bottom: 14px;
+  @media @tablet {
+    letter-spacing: 1px;
+    padding-right: 100px;
+    .set-font (24px, 32px);
+  }
+}
+
+.page-footer__item-text {
+  color: @threme-color-white;
+  .set-font (16px, 28px);
+  padding-bottom: 8px;
+  opacity: 0.4;
+  @media @tablet {
+    letter-spacing: 1px;
+    padding-right: 100px;
+    .set-font (24px, 32px);
+    padding-bottom: 0px;
+  }
+}
+
+.page-footer__logo {
+  position: relative;
+  top: -10px;
+  opacity: 0.4;
+  @media @tablet {
+    top: 0;
+    padding: 48px 0 20px;
+  }
+}
+
+.page-footer__logo-five,
+.page-footer__logo-words {
+  fill: @threme-color-white;
+}
+
+.page-footer__logo-five {
+  @media @tablet {
+    width: 49px;
+    height: 49px;
+    margin-right: 10px;
+  }
+}
+
+.page-footer__logo-words {
+  @media @tablet {
+    width: 200px;
+    height: 50px;
+  }
+}

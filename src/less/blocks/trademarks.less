@@ -1,0 +1,53 @@
+.trademarks {
+  padding: 100px 35px 75px;
+  @media @tablet {
+    padding: 100px 25px 75px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  @media @desktop-min {
+    padding: 60px 10px 25px;
+  }
+}
+
+.trademarks-box {
+  display: flex;
+  justify-content: space-around;
+  @media @tablet {
+    justify-content: space-between;
+    width: 1030px;
+  }
+}
+
+.trademarks__item {
+  font-family: @emphasis-font-demi;
+  box-sizing: border-box;
+  padding-top: 35px;
+  width: 100px;
+  height: 100px;
+  margin-top: 0;
+  background-color: #e9eff3;
+  border-radius: 50%;
+  text-align: center;
+  &--numbers {
+    .set-font (27px, 29px);
+    color: @threme-color-white;
+    background-color: @threme-color-red;
+  }
+  @media @tablet {
+    width: 110px;
+    height: 110px;
+    padding-top: 40px;
+    background-color: #f2f2f2;
+    &--numbers {
+      background-color: @threme-color-red;
+    }
+  }
+  @media @desktop-min {
+    background-color: #f0f0f0;
+    &--numbers {
+      background-color: @threme-color-red;
+    }
+  }
+}

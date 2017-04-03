@@ -1,0 +1,21 @@
+.btn() {
+  background-color: @threme-color-red;
+  border: 2px solid @threme-color-white;
+  color: @threme-color-white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 200ms;
+  &:hover,
+  &:focus {
+    background-color: @threme-color-white;
+    border: 2px solid @threme-color-red;
+    color: @threme-color-red;
+  }
+}
+
+.set-font(@base-font-size, @base-line-height) {
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+}

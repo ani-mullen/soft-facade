@@ -1,0 +1,41 @@
+{
+  "name": "SoftFacade",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тестовое задание",
+  "author": "Anna Karpina",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ani-mullen/soft-facade.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ani-mullen/soft-facade/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "browser-sync": "2.12.10",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.1",
+    "editorconfig-tools": "0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^2.0.0",
+    "gulp-flatten": "^0.3.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-less": "3.3.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "rename": "^1.0.3",
+    "run-sequence": "^1.2.1"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "engines": {
+    "node": "5.11"
+  }
+}

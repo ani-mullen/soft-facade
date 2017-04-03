@@ -1,0 +1,98 @@
+.card {
+  position: relative;
+  background-color: @threme-color-red;
+  font-family: @emphasis-font-medium;
+  font-weight: bold;
+  color: @threme-color-white;
+  box-sizing: border-box;
+  padding: 55px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  @media @tablet {
+    padding: 55px 25px 65px;
+  }
+  @media @desktop-min {
+    padding: 60px 55px 60px;
+  }
+}
+
+.card__item {
+  width: 50%;
+  @media @tablet {
+    width: 100%;
+  }
+  @media @desktop-min {
+    width: 60%;
+  }
+}
+
+.card__title {
+  margin: 0;
+  font-family: @emphasis-font-bold;
+  .set-font (50px, 65px);
+  letter-spacing: 1px;
+  @media @tablet {
+    .set-font (44px, 56px);
+    margin-bottom: 20px;
+  }
+}
+
+.card__btn {
+  .btn;
+  padding: 17px 25px;
+  border-radius: 35px;
+  @media @tablet {
+    .set-font (28px, 32px);
+    padding: 20px;
+    width: 100%;
+    border-radius: 40px;
+  }
+}
+
+.card__box {
+  position: absolute;
+  right: 13vw;
+  top: 80px;
+  background-color: @threme-color-white;
+  width: 300px;
+  height: 160px;
+  padding: 20px;
+  border-radius: 20px;
+  @media @tablet {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 535px;
+    height: 275px;
+    margin-bottom: 35px;
+  }
+  @media @desktop-min {
+    right: 45px;
+  }
+}
+
+.card__logo-five {
+  @media @tablet {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.card__logo-words {
+  fill: @threme-color-red;
+  @media @tablet {
+    width: 260px;
+    height: 65px;
+  }
+}
+
+.card__text {
+  margin-bottom: 50px;
+  @media @tablet {
+    margin-bottom: 30px;
+    .set-font (28px, 32px);
+  }
+  @media @desktop-min {
+    .set-font (18px, 22px);
+  }
+}
